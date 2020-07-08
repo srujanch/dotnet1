@@ -5,4 +5,4 @@
 
 #Print the result
 echo $sum
-dotnet tool install --global dotnet-sonarscanner --version 4.8.0
+./dotnet tool install --global dotnet-sonarscanner --version 4.8.0
