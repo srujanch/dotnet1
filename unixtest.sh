@@ -7,8 +7,8 @@
 echo $sum
 dotnet tool install --global dotnet-sonarscanner --version 4.8.0
 
-dotnet sonarscanner begin /k:"com.testing" 
-dotnet build /mnt/optum/cloned/_3e3b5cab-2a27-4dfc-adc5-94d62c21a42d/eShopOnWeb.sln
-dotnet sonarscanner end
+SonarScanner.MSBuild.exe begin /k:"project-key" 
+MSBuild.exe /mnt/optum/cloned/_3e3b5cab-2a27-4dfc-adc5-94d62c21a42d/eShopOnWeb.sln /t:Rebuild
+SonarScanner.MSBuild.exe end 
 
 echo "command executed"
